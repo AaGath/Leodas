@@ -11,7 +11,7 @@ from database.join_reqs import JoinReqs as db2
 from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INRE
+logger.setLevel(logging.INFO)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\((buttonurl|buttonalert):(?:/{0,2})(.+?)(:same)?\))")
 BANNED = {}
