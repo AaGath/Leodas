@@ -3,7 +3,7 @@
 # (c) @AlbertEinsteinTG
 
 import motor.motor_asyncio
-from info import REQ_CHANNEL, REQ_CHANNEL2
+from info import REQ_CHANNEL
 
 class JoinReqs:
 
