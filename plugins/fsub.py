@@ -173,6 +173,7 @@ def set_global_invite(url: str):
 async def send_file(client, query, ident, file_id):
     files_ = await get_file_details(file_id)
     if not files_:
+        logger.info("not file id")
         return
     files = files_[0]
     title = files.file_name
