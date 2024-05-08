@@ -14,10 +14,10 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 ✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
 ✯ Mʏ Vᴇʀꜱɪᴏɴ: ꜱᴀᴅɪᴇ-ʙᴏᴛ ᴠ4.5.0</b>"""
    
-    SOURCE_TXT = """<b>NOTE:</b>
+    SOURCE_TXT = """<b>NOTE:</b>"""
 - ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› : <a href='https://t.me/Wireless_TG'>ꜱᴀᴅɪᴇ ꜱɪɴᴋ ʙᴏᴛ</a>
 
-<b>ᴅᴇᴠ: <a herf='https://t.me/Wireless_TG'>ᴡɪʀᴇʟᴇss 🇮🇳 I 🇮🇹</a> </b>"""
+"""<b>ᴅᴇᴠ: <a herf='https://t.me/Wireless_TG'>ᴡɪʀᴇʟᴇss 🇮🇳 I 🇮🇹</a> </b>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 
