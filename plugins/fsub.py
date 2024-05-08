@@ -121,7 +121,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             check = await check_loop_sub(bot, update)
             if check:
                 await sh.delete()
-                await send_file(bot, update, mode, file_id)                                
+                return True                               
             else:
                 return False
         return False
