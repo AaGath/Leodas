@@ -2,10 +2,10 @@ import asyncio
 from pyrogram import Client, enums
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-
+from utils import check_loop_sub, get_size
 from database.join_reqs import JoinReqs
 from info import REQ_CHANNEL, AUTH_CHANNEL, JOIN_REQS_DB, ADMINS
-
+from database.ia_filterdb import get_file_details
 from logging import getLogger
 
 
@@ -100,16 +100,11 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         else:
             return True
     except UserNotParticipant:
-        text="""Fɪʀsᴛ ᴄʟɪᴄᴋ ᴏɴ Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ ʙᴜᴛᴛᴏɴ . ᴛʜᴇɴ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴄʟɪᴄᴋ ᴏɴ ᴍᴇ ᴊᴏɪɴᴇᴅ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ..."""
+        text=f"""<b>𝐇𝐞𝐲..</b>{update.from_user.mention} 🙋‍♂️ \n\nᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ꜰɪʀꜱᴛ, \nᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ.!! \n\n <b>താഴെ കാണുന്ന 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്യിത് ചാനലിൽ ജോയിൻ ചെയ്യുക, \n\nഅപ്പോൾ നിങ്ങൾക്ക് ഓട്ടോമാറ്റിക് ആയി മൂവി ലഭിക്കുന്നതാണ്.!!</b>"""
+
         buttons = [
             [
-                InlineKeyboardButton("🎗 Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🎗", url=invite_link)
-            ],
-            [
-                InlineKeyboardButton("㋡ Wʜʏ I'ᴍ Jᴏɪɴɪɴɢ", callback_data='whyjoin')
-            ],
-            [
-                InlineKeyboardButton("📥 Mᴇ Jᴏɪɴᴇᴅ 📥", callback_data=f"{mode}#{file_id}")
+                InlineKeyboardButton("𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=invite_link)
             ]
         ]
         
@@ -117,12 +112,18 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             buttons.pop()
 
         if not is_cb:
-            await update.reply(
+            sh = await update.reply(
                 text=text,
                 quote=True,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=enums.ParseMode.MARKDOWN,
             )
+            check = await check_loop_sub(bot, update)
+            if check:
+                await sh.delete()
+                await send_file(bot, update, mode, file_id)                                
+            else:
+                return False
         return False
     except FloodWait as e:
         await asyncio.sleep(e.x)
