@@ -8,7 +8,7 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
     ABOUT_TXT = """<b>✯ Mʏ ɴᴀᴍᴇ: {}</b>
-<b>✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf='https://t.me/Wireless_TG'>ᴡɪʀᴇʟᴇss 🇮🇳 I 🇮🇹</a> 
+✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf='https://t.me/Wireless_TG'>ᴡɪʀᴇʟᴇss 🇮🇳 I 🇮🇹</a> 
 ✯ Cᴏᴅᴇᴅ Oɴ: ᴩʏᴛʜᴏɴ/ᴩʏʀᴏɢʀᴀᴍ
 ✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: ᴍᴏɴɢᴏ-ᴅʙ
 ✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
