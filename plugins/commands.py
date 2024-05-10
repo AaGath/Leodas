@@ -38,7 +38,7 @@ async def start(client, message):
             InlineKeyboardButton("Movies Channel 🔎", url="https://t.me/+64hOQOdcbq41M2U1")
             ],[
             InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⛓‍💥", url="https://t.me/Wireless_TG"), 
-            InlineKeyboardButton("New Movies 🗂", url="https://t.me/+FVf53Yj0AQhkODll")
+            InlineKeyboardButton("New Movies 🗂", url="https://t.me/+OPwAXqLk8x45OTQ1")
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
@@ -56,7 +56,7 @@ async def start(client, message):
             InlineKeyboardButton("Movies Channel 🔎", url="https://t.me/+64hOQOdcbq41M2U1")
             ],[
             InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⛓‍💥", url="https://t.me/Wireless_TG"), 
-            InlineKeyboardButton("New Movies 🗂", url="https://t.me/+FVf53Yj0AQhkODll")
+            InlineKeyboardButton("New Movies 🗂", url="https://t.me/+OPwAXqLk8x45OTQ1")
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
