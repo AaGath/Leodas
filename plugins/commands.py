@@ -35,13 +35,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗", url="https://t.me/Ck_Linkz")
             ],[
-            InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⛓‍💥", url="https://t.me/ame0451"), 
-            InlineKeyboardButton("Movies Channel 🔎", url="https://t.me/+FC3V3q8ksjZjNDdl")
+            InlineKeyboardButton("📌 ᴍʏ ɢʀᴏᴜᴘ", url="https://t.me/Cinema_Kottaaram_Movies"), 
+            InlineKeyboardButton("Bot Owner", url="https://t.me/ame0451")
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            ],[ 
+            InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ") 
         await asyncio.sleep(2)
