@@ -38,10 +38,10 @@ async def start(client, message):
             InlineKeyboardButton("🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗", url="https://t.me/Ck_Linkz")
             ],[
             InlineKeyboardButton("📌 ᴍʏ ɢʀᴏᴜᴘ", url="https://t.me/Cinema_Kottaaram_Movies"), 
-            InlineKeyboardButton("Bot Owner", url="https://t.me/ame0451")
+            InlineKeyboardButton("🛠 ᴍʏ ᴏᴡɴᴇʀ", url="https://t.me/ame0451")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
-            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            InlineKeyboardButton("⚠️ Hᴇʟᴩ", callback_data="help"),
+            InlineKeyboardButton("⚙️ Aʙᴏᴜᴛ", callback_data="about")
             ],[ 
             InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
         ]]
