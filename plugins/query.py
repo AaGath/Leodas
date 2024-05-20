@@ -429,13 +429,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":                        
         buttons = [[
-            InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗", url="https://t.me/Ck_Linkz")
             ],[
-            InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⛓‍💥", url="https://t.me/ame0451"), 
-            InlineKeyboardButton("Movies Channel", url="https://t.me/+FC3V3q8ksjZjNDdl")
+            InlineKeyboardButton("📌 ᴍʏ ɢʀᴏᴜᴘ", url="https://t.me/Cinema_Kottaaram_Movies"), 
+            InlineKeyboardButton("🛠 ᴍʏ ᴏᴡɴᴇʀ", url="https://t.me/ame0451")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
-            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            InlineKeyboardButton("⚠️ Hᴇʟᴩ", callback_data="help"),
+            InlineKeyboardButton("⚙️ Aʙᴏᴜᴛ", callback_data="about")
+            ],[ 
+            InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
