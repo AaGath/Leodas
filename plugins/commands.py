@@ -38,7 +38,7 @@ async def start(client, message):
             InlineKeyboardButton("🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗", url="https://t.me/Ck_Linkz")
             ],[
             InlineKeyboardButton("📌 ᴍʏ ɢʀᴏᴜᴘ", url="https://t.me/Cinema_Kottaaram_Movies"), 
-            InlineKeyboardButton("🛠 ᴍʏ ᴏᴡɴᴇʀ", url="https://t.me/ame0451")
+            InlineKeyboardButton("🛠 ᴍʏ ᴏᴡɴᴇʀ", url="https://t.me/ckadmin_bot")
             ],[      
             InlineKeyboardButton("⚠️ Hᴇʟᴩ", callback_data="help"),
             InlineKeyboardButton("⚙️ Aʙᴏᴜᴛ", callback_data="about")
@@ -57,7 +57,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⛓‍💥", url="https://t.me/ame0451"), 
+            InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⛓‍💥", url="https://t.me/ckadmin_bot"), 
             InlineKeyboardButton("Movies Channel 🔎", url="https://t.me/+FC3V3q8ksjZjNDdl")
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
